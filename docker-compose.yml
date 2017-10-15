@@ -1,0 +1,38 @@
+version: '2'
+services:
+  backend:
+    build: ./docker/backend
+    links:
+      - db
+    expose:
+      - "9000"
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/var/www/symfony
+      - ./docker/backend/php.ini:/usr/local/etc/php/php.ini
+      - ~/.composer:/root/.composer
+  nginx:
+    image: nginx:1.13.0
+    links:
+      - backend
+    volumes_from:
+      - backend
+    volumes:
+      - ./docker/backend/vhost.conf:/etc/nginx/conf.d/default.conf
+    expose:
+      - "80"
+      - "443"
+    ports:
+      - "8080:80"
+      - "4430:443"
+  db:
+    image: postgres:9.6.4
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: symfony
+      POSTGRES_PASSWORD: symfony123!#
+      POSTGRES_DB: symfony
+    volumes:
+      - ./postgresql-data:/var/lib/postgresql/data

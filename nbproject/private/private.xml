@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/app/Resources/views/default/index.html.twig</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/src/AppBundle/Resources/config/doctrine/User.orm.yml</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/src/AppBundle/Controller/DefaultController.php</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/web/main.php</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/app/config/parameters.yml</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/src/AppBundle/Entity/User.php</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/src/AppBundle/Resources/config/doctrine/InvoiceItem.orm.yml</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/web/header.php</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/web/functions.php</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/app/config/config.yml</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/src/AppBundle/Resources/config/doctrine/Invoice.orm.yml</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/web/index.php</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/web/login.php</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/src/AppBundle/FormType/RegisterType.php</file>
+            <file>file:/D:/xampp/htdocs/sf-phpsummit-2017/app/Resources/views/default/register.html.twig</file>
+        </group>
+    </open-files>
+</project-private>

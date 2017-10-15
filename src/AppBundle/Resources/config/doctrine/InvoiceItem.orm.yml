@@ -1,0 +1,63 @@
+AppBundle\Entity\InvoiceItem:
+    type: entity
+    table: invoice_items
+    indexes:
+        fk_invoice_item:
+            columns:
+                - invoice_id
+    id:
+        id:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        quantity:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        unit:
+            type: string
+            nullable: true
+            length: 150
+            options:
+                fixed: false
+        netPrice:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 2
+            column: net_price
+        vat:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 0
+        totalPrice:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 2
+            column: total_price
+    manyToOne:
+        invoice:
+            targetEntity: Invoice
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                invoice_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
